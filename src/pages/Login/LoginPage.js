@@ -1,24 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Form } from "react-bootstrap";
+
+import withFirebaseAuth from "react-with-firebase-auth";
+import * as firebase from "firebase/app";
+import "firebase/auth";
+import firabaseConfig from "../../utils/firebaseUtils";
 
 import "./LoginPage.css";
 import Sidebar from "../../components/sidebar";
 
 export default function LoginPage({ history }) {
-  const [login, setLogin] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  function handleSubmit() {
-    if ((login === "adm@adm.com.br") & (password === "123")) {
-      history.push("/dashboard");
+  const onChangeHandler = (event) => {
+    const { name, value } = event.currentTarget;
+
+    if (name === "userEmail") {
+      setEmail(value);
+    } else if (name === "userPassword") {
+      setPassword(value);
     }
-  }
+  };
+
+  // function handleSubmit() {
+  //   if ((login === "adm@adm.com.br") & (password === "123")) {
+  //     history.push("/dashboard");
+  //   }
+  // }
 
   return (
     <>
       <Sidebar />
       <div id="page-landing" className="container-fluid">
-        <Form onSubmit={handleSubmit}>
+        <Form>
           <Form.Text className="text-muted">
             <h1>Olá</h1>
             <h4>Acesse aqui seus dashboards!</h4>
@@ -28,8 +43,8 @@ export default function LoginPage({ history }) {
             <Form.Control
               type="email"
               placeholder="Seu Email"
-              value={login}
-              onChange={(event) => setLogin(event.target.value)}
+              value={email}
+              onChange={(event) => onChangeHandler(event)}
             />
           </Form.Group>
 
@@ -39,7 +54,7 @@ export default function LoginPage({ history }) {
               type="password"
               placeholder="Senha"
               value={password}
-              onChange={(event) => setPassword(event.target.value)}
+              onChange={(event) => onChangeHandler(event)}
             />
           </Form.Group>
 
