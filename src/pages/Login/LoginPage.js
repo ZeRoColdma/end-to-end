@@ -5,30 +5,20 @@ import "./LoginPage.css";
 import Sidebar from "../../components/sidebar";
 
 export default function LoginPage({ history }) {
-  const [email, setEmail] = useState("");
+  const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
 
-  const onChangeHandler = (event) => {
-    const { name, value } = event.currentTarget;
-
-    if (name === "userEmail") {
-      setEmail(value);
-    } else if (name === "userPassword") {
-      setPassword(value);
+  function handleSubmit() {
+    if ((login === "adm@adm.com.br") & (password === "123")) {
+      history.push("/dashboard");
     }
-  };
-
-  // function handleSubmit() {
-  //   if ((login === "adm@adm.com.br") & (password === "123")) {
-  //     history.push("/dashboard");
-  //   }
-  // }
+  }
 
   return (
     <>
       <Sidebar />
       <div id="page-landing" className="container-fluid">
-        <Form>
+        <Form onSubmit={handleSubmit}>
           <Form.Text className="text-muted">
             <h1>Olá</h1>
             <h4>Acesse aqui seus dashboards!</h4>
@@ -38,8 +28,8 @@ export default function LoginPage({ history }) {
             <Form.Control
               type="email"
               placeholder="Seu Email"
-              value={email}
-              onChange={(event) => onChangeHandler(event)}
+              value={login}
+              onChange={(event) => setLogin(event.target.value)}
             />
           </Form.Group>
 
@@ -49,7 +39,7 @@ export default function LoginPage({ history }) {
               type="password"
               placeholder="Senha"
               value={password}
-              onChange={(event) => onChangeHandler(event)}
+              onChange={(event) => setPassword(event.target.value)}
             />
           </Form.Group>
 
