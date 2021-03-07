@@ -6,7 +6,7 @@ import logoEndToEnd from "../assets/endtoend.png";
 
 export default function SideBar() {
   return (
-    <aside className="app-sidebar">
+    <aside id="app-sidebar" className="app-sidebar">
       <img src={logoEndToEnd} alt="Logo End To End" />
       <div>
         <h1>

@@ -12,6 +12,13 @@ import {
 import Logo from "../../assets/endtoend.png";
 
 export default function Dashboard({ history }) {
+  const sites = [
+    "https://app.powerbi.com/view?r=eyJrIjoiNDM2YTVkYmItMDBmMC00YmE0LWE3OGYtMjQ1ODg4NDFjMjA3IiwidCI6ImIwMGIyODZhLTU1MWYtNGE2NC05ZjE0LWZmM2E2M2Q2ZDhmNiJ9&pageName=ReportSectiondd9000a7f5369487d44e",
+    "https://app.powerbi.com/view?r=eyJrIjoiNDY3Mzk0NTUtZGQ2MC00NmJiLWI1NTYtMDU2NmVmNTBkZjVlIiwidCI6ImIwMGIyODZhLTU1MWYtNGE2NC05ZjE0LWZmM2E2M2Q2ZDhmNiJ9",
+    "https://app.powerbi.com/view?r=eyJrIjoiNjM4YzBkNGQtZjM5NC00N2Y4LTk3YjctYTM5ODFmODU1NTA0IiwidCI6ImIwMGIyODZhLTU1MWYtNGE2NC05ZjE0LWZmM2E2M2Q2ZDhmNiJ9",
+    "https://app.powerbi.com/view?r=eyJrIjoiYjNiZjY2NmMtYmQ2MC00NWRkLTlhY2UtNGE1ODAyMmM1MjFiIiwidCI6ImIwMGIyODZhLTU1MWYtNGE2NC05ZjE0LWZmM2E2M2Q2ZDhmNiJ9",
+  ];
+
   function handleSubmit() {
     history.goBack();
   }
@@ -46,9 +53,11 @@ export default function Dashboard({ history }) {
                   <Card.Text>Mills</Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="outline-secondary" type="submit">
-                    Acessar
-                  </Button>
+                  <a target="_blank" href={sites[0]}>
+                    <Button variant="outline-secondary" type="submit">
+                      Acessar
+                    </Button>
+                  </a>
                 </Card.Footer>
               </Card>
               <Card>
@@ -57,9 +66,11 @@ export default function Dashboard({ history }) {
                   <Card.Text>Palmeiras </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="outline-secondary" type="submit">
-                    Acessar
-                  </Button>
+                  <a target="_blank" href={sites[1]}>
+                    <Button variant="outline-secondary" type="submit">
+                      Acessar
+                    </Button>
+                  </a>
                 </Card.Footer>
               </Card>
               <Card>
@@ -68,9 +79,11 @@ export default function Dashboard({ history }) {
                   <Card.Text>Atlético Mineiro</Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Button variant="outline-secondary" type="submit">
-                    Acessar
-                  </Button>
+                  <a target="_blank" href={sites[2]}>
+                    <Button variant="outline-secondary" type="submit">
+                      Acessar
+                    </Button>
+                  </a>
                 </Card.Footer>
               </Card>
             </Row>
@@ -78,6 +91,19 @@ export default function Dashboard({ history }) {
 
           <Container fluid className="shadow p-3  bg-white rounded">
             <Row>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Bonaparte - Barbearia</Card.Title>
+                  <Card.Text>Bonaparte </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <a target="_blank" href={sites[3]}>
+                    <Button variant="outline-secondary" type="submit">
+                      Acessar
+                    </Button>
+                  </a>
+                </Card.Footer>
+              </Card>
               <Card>
                 <Card.Body>
                   <Card.Title>B3 - Compras</Card.Title>
@@ -89,59 +115,11 @@ export default function Dashboard({ history }) {
                   </Button>
                 </Card.Footer>
               </Card>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Bonaparte - Barbearia</Card.Title>
-                  <Card.Text>Bonaparte </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                  <Button variant="outline-secondary" type="submit">
-                    Acessar
-                  </Button>
-                </Card.Footer>
-              </Card>
+
               <Card>
                 <Card.Body>
                   <Card.Title>Palmeiras - Temporário</Card.Title>
                   <Card.Text>Quipo</Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                  <Button variant="outline-secondary" type="submit">
-                    Acessar
-                  </Button>
-                </Card.Footer>
-              </Card>
-            </Row>
-          </Container>
-
-          <Container fluid className="shadow p-3  bg-white rounded">
-            <Row>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Gestão Galo na Veia</Card.Title>
-                  <Card.Text>Atlético Mineiro</Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                  <Button variant="outline-secondary" type="submit">
-                    Acessar
-                  </Button>
-                </Card.Footer>
-              </Card>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Beleza Demo</Card.Title>
-                  <Card.Text>Beleza Demo </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                  <Button variant="outline-secondary" type="submit">
-                    Acessar
-                  </Button>
-                </Card.Footer>
-              </Card>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Demo - Botafogo</Card.Title>
-                  <Card.Text>Botafogo</Card.Text>
                 </Card.Body>
                 <Card.Footer>
                   <Button variant="outline-secondary" type="submit">

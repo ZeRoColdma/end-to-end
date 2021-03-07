@@ -9,6 +9,11 @@ aside.app-sidebar {
   align-items: center;
 }
 
+aside.app-sidebar h1,
+p {
+  color: rgb(0, 0, 0);
+}
+
 aside.app-sidebar img {
   margin-bottom: 40px;
   width: 300px;

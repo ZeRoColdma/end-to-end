@@ -8,6 +8,14 @@
   background-color: #3e3d5e;
 }
 
+#page-landing label {
+  color: #000;
+}
+
+#page-landing text {
+  color: rgb(112, 112, 112);
+}
+
 #page-landing .content-wrapper {
   position: relative;
 
