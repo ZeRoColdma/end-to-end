@@ -1,10 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-
-import withFirebaseAuth from "react-with-firebase-auth";
-import * as firebase from "firebase/app";
-import "firebase/auth";
-import firabaseConfig from "../../utils/firebaseUtils";
 
 import "./LoginPage.css";
 import Sidebar from "../../components/sidebar";
