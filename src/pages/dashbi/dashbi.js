@@ -53,7 +53,7 @@ export default function Dashboard({ history }) {
                   <Card.Text>Mills</Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <a target="_blank" href={sites[0]}>
+                  <a target="_blank" rel="noopener noreferrer" href={sites[0]}>
                     <Button variant="outline-secondary" type="submit">
                       Acessar
                     </Button>
@@ -66,7 +66,7 @@ export default function Dashboard({ history }) {
                   <Card.Text>Palmeiras </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <a target="_blank" href={sites[1]}>
+                  <a target="_blank" rel="noopener noreferrer" href={sites[1]}>
                     <Button variant="outline-secondary" type="submit">
                       Acessar
                     </Button>
@@ -79,7 +79,7 @@ export default function Dashboard({ history }) {
                   <Card.Text>Atlético Mineiro</Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <a target="_blank" href={sites[2]}>
+                  <a target="_blank" rel="noopener noreferrer" href={sites[2]}>
                     <Button variant="outline-secondary" type="submit">
                       Acessar
                     </Button>
@@ -97,7 +97,7 @@ export default function Dashboard({ history }) {
                   <Card.Text>Bonaparte </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <a target="_blank" href={sites[3]}>
+                  <a target="_blank" rel="noopener noreferrer" href={sites[3]}>
                     <Button variant="outline-secondary" type="submit">
                       Acessar
                     </Button>
