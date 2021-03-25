@@ -1,0 +1,94 @@
+[debug] [2021-03-25T00:47:31.116Z] ----------------------------------------------------------------------
+[debug] [2021-03-25T00:47:31.118Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2021-03-25T00:47:31.118Z] CLI Version:   9.7.0
+[debug] [2021-03-25T00:47:31.118Z] Platform:      linux
+[debug] [2021-03-25T00:47:31.119Z] Node Version:  v15.12.0
+[debug] [2021-03-25T00:47:31.119Z] Time:          Wed Mar 24 2021 21:47:31 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-03-25T00:47:31.119Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-03-25T00:47:31.124Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-25T00:47:31.124Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/carlos/Quipo-RDP/QUIPO/end-to-end
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using end-to-end-a4e1c. 
+[debug] [2021-03-25T00:47:34.407Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/end-to-end-a4e1c [none]
+[debug] [2021-03-25T00:47:35.694Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/end-to-end-a4e1c 403
+[debug] [2021-03-25T00:47:35.695Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/end-to-end-a4e1c {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-03-25T00:47:35.695Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-03-25T00:47:36.011Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/usr/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/usr/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+    at async Client.request (/usr/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/usr/lib/node_modules/firebase-tools/lib/management/projects.js:289:21)
+    at async Object.doSetup [as project] (/usr/lib/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/usr/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project end-to-end-a4e1c. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-03-25T00:49:03.941Z] ----------------------------------------------------------------------
+[debug] [2021-03-25T00:49:03.943Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2021-03-25T00:49:03.944Z] CLI Version:   9.7.0
+[debug] [2021-03-25T00:49:03.944Z] Platform:      linux
+[debug] [2021-03-25T00:49:03.944Z] Node Version:  v15.12.0
+[debug] [2021-03-25T00:49:03.945Z] Time:          Wed Mar 24 2021 21:49:03 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-03-25T00:49:03.945Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-03-25T00:49:03.949Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-25T00:49:03.950Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/carlos/Quipo-RDP/QUIPO/end-to-end
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using end-to-end-a4e1c. 
+[debug] [2021-03-25T00:49:07.283Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/end-to-end-a4e1c [none]
+[debug] [2021-03-25T00:49:07.883Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/end-to-end-a4e1c 403
+[debug] [2021-03-25T00:49:07.883Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/end-to-end-a4e1c {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-03-25T00:49:07.884Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-03-25T00:49:08.188Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/usr/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/usr/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+    at async Client.request (/usr/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/usr/lib/node_modules/firebase-tools/lib/management/projects.js:289:21)
+    at async Object.doSetup [as project] (/usr/lib/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/usr/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project end-to-end-a4e1c. Please make sure the project exists and your account has permission to access it.
