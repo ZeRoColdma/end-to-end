@@ -49,7 +49,9 @@ export default function Dashboard({ history }) {
             <Row sm={8}>
               <Card>
                 <Card.Body>
-                  <Card.Title>Análise de concorrentes por região</Card.Title>
+                  <Card.Title style={{ color: "#000" }}>
+                    Análise de concorrentes por região
+                  </Card.Title>
                   <Card.Text>Mills</Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -62,7 +64,9 @@ export default function Dashboard({ history }) {
               </Card>
               <Card>
                 <Card.Body>
-                  <Card.Title>Membership & Vindi</Card.Title>
+                  <Card.Title style={{ color: "#000" }}>
+                    Membership & Vindi
+                  </Card.Title>
                   <Card.Text>Palmeiras </Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -75,7 +79,9 @@ export default function Dashboard({ history }) {
               </Card>
               <Card>
                 <Card.Body>
-                  <Card.Title>Site Galo na Veia</Card.Title>
+                  <Card.Title style={{ color: "#000" }}>
+                    Site Galo na Veia
+                  </Card.Title>
                   <Card.Text>Atlético Mineiro</Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -93,7 +99,9 @@ export default function Dashboard({ history }) {
             <Row>
               <Card>
                 <Card.Body>
-                  <Card.Title>Bonaparte - Barbearia</Card.Title>
+                  <Card.Title style={{ color: "#000" }}>
+                    Bonaparte - Barbearia
+                  </Card.Title>
                   <Card.Text>Bonaparte </Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -106,7 +114,9 @@ export default function Dashboard({ history }) {
               </Card>
               <Card>
                 <Card.Body>
-                  <Card.Title>B3 - Compras</Card.Title>
+                  <Card.Title style={{ color: "#000" }}>
+                    B3 - Compras
+                  </Card.Title>
                   <Card.Text>B3</Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -118,7 +128,9 @@ export default function Dashboard({ history }) {
 
               <Card>
                 <Card.Body>
-                  <Card.Title>Palmeiras - Temporário</Card.Title>
+                  <Card.Title style={{ color: "#000" }}>
+                    Palmeiras - Temporário
+                  </Card.Title>
                   <Card.Text>Quipo</Card.Text>
                 </Card.Body>
                 <Card.Footer>

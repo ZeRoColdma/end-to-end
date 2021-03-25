@@ -9,7 +9,7 @@ export default function LoginPage({ history }) {
   const [password, setPassword] = useState("");
 
   function handleSubmit() {
-    if ((login === "adm@adm.com.br") & (password === "123")) {
+    if ((login === "adm@adm.com.br") & (password === "quipo123")) {
       history.push("/dashboard");
     }
   }
